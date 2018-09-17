@@ -1,6 +1,6 @@
-#workspace:
-#  base: /
-#  path: /python/app/
+workspace:
+  base: /python
+  path: app/
 
 pipeline:
   install:
