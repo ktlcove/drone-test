@@ -6,11 +6,7 @@ pipeline:
   install:
     image: python
     commands:
-    - ls
-    - pwd
-    - env
-    - pip install .
-    - pip install docker-compose > /dev/null
+    - pip install docker-compose
     - docker-compose --project-name ${CI_REPO_NAME} -f .docker-compose.yml up -d
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
