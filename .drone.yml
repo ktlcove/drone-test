@@ -10,7 +10,6 @@ pipeline:
     - pwd
     - env
     - pip install .
-#    - python -m drone_test.app
     - pip install docker-compose
     - docker-compose -h
     volumes:
