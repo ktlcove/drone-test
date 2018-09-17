@@ -1,6 +1,6 @@
-workspace:
-  base: /python
-  path: app/
+#workspace:
+#  base: /python
+#  path: app/
 
 pipeline:
   install:
@@ -8,3 +8,4 @@ pipeline:
     commands:
     - ls
     - pwd
+    - env
