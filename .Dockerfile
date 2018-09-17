@@ -1,5 +1,5 @@
 FROM python
-COPY ${CI_WORKSPACE}/* /code/
+COPY . /code/
 WORKDIR /code
 RUN pip install .
 

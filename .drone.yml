@@ -11,7 +11,7 @@ pipeline:
     - env
     - pip install .
     - pip install docker-compose > /dev/null
-    - docker-compose --project-name ${CI_REPO_NAME} -f .docker/docker-compose.yml up -d
+    - docker-compose --project-name ${CI_REPO_NAME} -f .docker-compose.yml up -d
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
 
