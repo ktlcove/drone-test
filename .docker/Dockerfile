@@ -1,5 +1,5 @@
 FROM python
-ADD ${DRONE_WORKSPACE} /code
+ADD ${CI_WORKSPACE}/* /code
 WORKDIR /code
 RUN pip install .
 
