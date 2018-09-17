@@ -10,8 +10,8 @@ pipeline:
     - pwd
     - env
     - pip install .
-    - pip install docker-compose
-    - docker-compose up --force-recreate -f .docker/docker-compose.yml --project-name ${CI_REPO_NAME} -d
+    - pip install docker-compose > /dev/null
+    - docker-compose --project-name -f .docker/docker-compose.yml ${CI_REPO_NAME} up -d
     volumes:
     - /var/run/docker.sock:/var/run/docker.sock
 
