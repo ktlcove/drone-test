@@ -8,6 +8,7 @@ redis = Redis(host='redis', port=6379)
 @app.route('/')
 def hello():
     redis.incr('hits')
+    redis.incr('hits')
     count = redis.incr('hits')
     return 'Hello World! 该页面已被访问 {} 次。\n'.format(count)
 
