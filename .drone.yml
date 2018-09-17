@@ -9,3 +9,9 @@ pipeline:
     - ls
     - pwd
     - env
+
+service:
+  cache:
+    image: redis
+    volumes:
+    - /srv/redis:/data
