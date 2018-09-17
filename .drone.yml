@@ -1,0 +1,10 @@
+#workspace:
+#  base: /
+#  path: /python/app/
+
+pipeline:
+  install:
+    image: python
+    commands:
+    - ls
+    - pwd
